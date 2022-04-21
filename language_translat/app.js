@@ -3,6 +3,10 @@ const app= express();
 
 app.use(express.json());
 
+const NodeCache = require( "node-cache" );
+const myCache = new NodeCache();
+
+// const server= require("./src/cache");
 
 const transController = require("./src/controller/trans.controller");
 
